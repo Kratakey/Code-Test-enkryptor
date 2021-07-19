@@ -21,16 +21,4 @@ public class TestBase {
         testVar = random.name().username() + "@dd.dd";
         System.out.println("Before all:"+testVar);
     }
-
-    @BeforeEach
-    public void setupConfig() {
-        Configuration.browser = "chrome";
-        Configuration.startMaximized = true;
-    }
-
-    @AfterEach
-    public void refresh() {
-        closeWebDriver();
-    }
-
 }
